@@ -1,5 +1,12 @@
+@import './pages/Registration/registration.css';
+
 .App {
   text-align: center;
+}
+
+p{
+  font-size: 12px;
+  color: gray;
 }
 
 .App-logo {

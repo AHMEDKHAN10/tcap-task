@@ -1,0 +1,123 @@
+.registrationParentDiv {
+  background-image: url("../../assets/bg.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerBox {
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.centerBoxInnerSpace{
+  display: flex;
+}
+
+.centerBoxInnerCol1 {
+  z-index: 9;
+  transition: 3s;
+  transition-timing-function: ease-in;
+  padding: 25px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-1-ease-left{
+  opacity: 0;
+  transform: translateX(-1%);
+}
+
+.formHeadingDiv{
+  width: 85%;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.centerBoxInnerCol2 {
+  z-index: 9;
+  transition: 3s;
+  transition-timing-function: ease-in;
+  width: 100%;
+  background-color: #f1f6ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2-ease-right{
+  opacity: 0;
+  transform: translateX(1%);
+}
+
+.fieldTitle {
+  color: #19125d;
+  font-weight: 500
+}
+
+.regButton {
+  width: 100%;
+  background-color:#1e00e5;
+  font-weight: 500;
+}
+
+.register-confirmation{
+  position: absolute;
+  transition: 3s;
+  transition-timing-function: ease-in;
+  opacity: 10;
+  transform: translateX(0%);
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.successContent{
+  width: 100%;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.noDisplay{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .registrationParentDiv {
+    background-image: url("../../assets/bg.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centerBoxInnerSpace{
+    display: block;
+  }
+
+  .centerBoxInnerCol1 {
+    z-index: 9;
+    transition: 3s;
+    transition-timing-function: ease-in;
+    padding: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

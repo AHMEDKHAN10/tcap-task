@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TokenContextWrapper } from './context/contextToken';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <TokenContextWrapper>
+      <App />
+    </TokenContextWrapper>
   </React.StrictMode>
 );
 
